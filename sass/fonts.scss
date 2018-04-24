@@ -1,8 +1,62 @@
 @font-face {
-  font-family: "";
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: normal;
+  src: local("Lato Thin"),
+    url("../fonts/Lato-Thin.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+  src: local("Lato Regular"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Lato Medium"),
+    url("../fonts/Lato-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Lato Semibold"),
+    url("../fonts/Lato-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+  src: local("Lato Heavy"),
+    url("../fonts/Lato-Heavy.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Avenir Light"),
+    url("../fonts/Avenir-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Raleway Bold"),
+    url("../fonts/Raleway-Bold.woff") format("woff");
   font-display: swap;
 }
