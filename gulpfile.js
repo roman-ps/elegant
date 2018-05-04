@@ -10,8 +10,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     imagemin = require('gulp-imagemin'),
     del = require('del'),
-    runsequence = require('run-sequence'); // плагин для последовательного выполнения задач 
-    
+    runsequence = require('run-sequence'); // плагин для последовательного выполнения задач
+
 
 gulp.task('styles', function() { // стили, префиксер, минификация
   gulp.src('sass/style.scss')
@@ -72,7 +72,7 @@ gulp.task('clean', function() {
   del('build');
 })
 
-gulp.task ('build', function(callback) { // запуск всех задач сборки 
+gulp.task ('build', function(callback) { // запуск всех задач сборки
   runsequence('clean', 'html', 'css', 'js', 'fonts', 'img', callback)
 })
 
