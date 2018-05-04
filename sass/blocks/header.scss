@@ -2,8 +2,65 @@
   background-color: #012536;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-position: center;
+  background-position: center 0%;
   background-size: cover;
-  padding: 50px 0 0;
+  background-blend-mode: overlay;
+  padding: 50px 0 45px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  margin: 240px 0 0;
+  font-family: $raleway;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__subtitle {
+  margin: 95px 0 0;
+  font-family: $lato;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.header__btn {
+  position: relative;
+  display: block;
+  margin: 150px auto 0;
+  width: 92px;
+  height: 92px;
+  border: 3px solid #8098a4;
+  border-radius: 50%;
+  font-size: 0;
+
+  &::before {
+    @include pseudo;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #8098a4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: none;
+    border-left: none;
+  }
 }

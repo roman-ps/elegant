@@ -1,0 +1,42 @@
+.menu {
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  display: inline-block;
+  padding: 0 40px 0 0;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.025em;
+}
+
+.menu__btn {
+  position: relative;
+  width: 30px;
+  height: 24px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  border-bottom: 4px solid #ffffff;
+  border-top: 4px solid #ffffff;
+  cursor: pointer;
+
+  &::before {
+    @include pseudo;
+    width: 30px;
+    height: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: #ffffff;
+  }
+}
