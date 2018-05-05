@@ -1,0 +1,46 @@
+.clients {
+  padding: 100px 0 0;
+  background-color: #f4f4f4;
+}
+
+.clients__list {
+  margin: 170px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.clients__link {
+  font-size: 0;
+}
+
+.clients__container {
+  margin: 130px 0 0;
+  padding: 120px 0 55px;
+  background-color: #182c3b;
+  background-image: url("../img/clients-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.clients__quote {
+  font-family: $lato;
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.clients__citing {
+  margin: 50px 0 0;
+  font-family: $raleway;
+  font-size: 21px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}

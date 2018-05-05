@@ -1,0 +1,49 @@
+.about {
+  padding: 100px 0 0;
+}
+
+.about__description {
+  margin: 140px auto 0;
+  width: 770px;
+  font-family: $lato;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about__container {
+  background-color: #000000;
+  background-image: url("../img/about-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 170px 0 110px;
+  margin: 85px 0 0;
+  font-family: $lato;
+  color: #ffffff;
+}
+
+.about__container-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about__container-description {
+  width: 520px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 100;
+  margin: 0 0 56px;
+}
+
+.about__container-link {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
