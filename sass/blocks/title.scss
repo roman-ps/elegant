@@ -1,0 +1,19 @@
+.title {
+  position: relative;
+  font-family: $raleway;
+  font-size: 35px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    @include pseudo;
+    width: 86px;
+    height: 2px;
+    background-color: #000000;
+    bottom: -74px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
