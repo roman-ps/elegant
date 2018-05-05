@@ -41,12 +41,17 @@
   color: #ffffff;
 }
 
-.header__btn {
-  position: relative;
+.header__btn-container {
   display: block;
-  margin: 150px auto 0;
-  width: 92px;
-  height: 92px;
+  text-align: center;
+  margin: 150px 0 0;
+}
+
+.header__btn {
+  display: inline-block;
+  position: relative;
+  width: 86px;
+  height: 86px;
   border: 3px solid #8098a4;
   border-radius: 50%;
   font-size: 0;
