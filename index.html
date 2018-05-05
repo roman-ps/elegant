@@ -42,12 +42,12 @@
     <section class="about">
       <div class="wrapper">
         <h2 class="title about__title">About us</h2>
-        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-trud exercitation ullamco laboris.</p>
       </div>
       <div class="about__container">
         <div class="wrapper">
           <h3 class="about__container-title">Dolore magna aliqua</h3>
-          <p class="about__container-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="about__container-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br> et dolore magna aliqua.</p>
           <a class="about__container-link" href="#">more</a>
         </div>
       </div>
@@ -57,7 +57,7 @@
       <div class="wrapper">
         <h2 class="title work__title">Our Work</h2>
         <ul class="work__nav">
-          <li class="work__nav-item"><a class="work__nav-link work__nav-link--all" href="#">All</a></li>
+          <li class="work__nav-item"><a class="work__nav-link work__nav-link--all work__nav-link--active" href="#">All</a></li>
           <li class="work__nav-item"><a class="work__nav-link work__nav-link--branding" href="#">Branding</a></li>
           <li class="work__nav-item"><a class="work__nav-link work__nav-link--design" href="#">Web design</a></li>
           <li class="work__nav-item"><a class="work__nav-link work__nav-link--mobile" href="#">Mobile Ui</a></li>
@@ -71,7 +71,7 @@
           <li class="work__list-item"><a class="work__list-link" href="#"><img src="img/work-item5.jpg" width="370" height="420" alt="Item5"></a></li>
           <li class="work__list-item"><a class="work__list-link" href="#"><img src="img/work-item6.jpg" width="370" height="420" alt="Item6"></a></li>
         </ul>
-        <div class="work__link"><a class="btn btn--work work__btn" href="#">More</a></div>
+        <div class="work__link"><button class="btn btn--work">More</button></div>
       </div>
     </section>
 
@@ -79,11 +79,11 @@
       <div class="wrapper">
         <h2 class="title clients__title">Our clients</h2>
         <ul class="clients__list">
-          <li class="clients__item"><a class="clients__link" href="#"><img src="img/clients-item1.jpg" width="140" height="48" alt="Google"></a></li>
-          <li class="clients__item"><a class="clients__link" href="#"><img src="img/clients-item2.jpg" width="136" height="48" alt="Samsung"></a></li>
-          <li class="clients__item"><a class="clients__link" href="#"><img src="img/clients-item3.jpg" width="126" height="48" alt="Flickr"></a></li>
-          <li class="clients__item"><a class="clients__link" href="#"><img src="img/clients-item4.jpg" width="175" height="48" alt="Foursquare"></a></li>
-          <li class="clients__item"><a class="clients__link" href="#"><img src="img/clients-item5.jpg" width="182" height="48" alt="Pinterest"></a></li>
+          <li class="clients__item"><a class="clients__link" href="#">Google<img src="img/clients-item1.png" width="140" height="48" alt="Google"></a></li>
+          <li class="clients__item"><a class="clients__link" href="#">Samsung<img src="img/clients-item2.png" width="136" height="45" alt="Samsung"></a></li>
+          <li class="clients__item"><a class="clients__link" href="#">Flickr<img src="img/clients-item3.png" width="126" height="38" alt="Flickr"></a></li>
+          <li class="clients__item"><a class="clients__link" href="#">Foursquare<img src="img/clients-item4.png" width="175" height="48" alt="Foursquare"></a></li>
+          <li class="clients__item"><a class="clients__link" href="#">Pinterest<img src="img/clients-item5.png" width="182" height="46" alt="Pinterest"></a></li>
         </ul>
       </div>
       <div class="clients__container">
@@ -98,24 +98,24 @@
       <div class="wrapper">
         <h2 class="title services__title">Our services</h2>
         <ul class="services__list">
-          <li class="services__item">
+          <li class="services__item services__item--design">
             <div class="services__item-title">App Desing</div>
             <p class="services__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
           </li>
 
-          <li class="services__item">
+          <li class="services__item services__item--responsive">
             <div class="services__item-title">Responsive Layout</div>
             <p class="services__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
           </li>
 
-          <li class="services__item">
+          <li class="services__item services__item--pixel">
             <div class="services__item-title">Pixel Perfect Design</div>
             <p class="services__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
           </li>
         </ul>
         <div class="sliders services__sliders">
-          <button class="sliders__first" type="button"></button>
-          <button class="sliders__second" type="button"></button>
+          <button class="sliders__btn sliders__btn--active" type="button"></button>
+          <button class="sliders__btn" type="button"></button>
         </div>
       </div>
         <div class="services__container">
@@ -199,7 +199,7 @@
           <input type="text" id="name" placeholder="Name">
           <input type="email" id="email" placeholder="Email">
           <input type="text" id="message" placeholder="Message">
-          <button class="btn btn--form form__btn">Send</button>
+          <button class="btn btn--form">Send</button>
         </form>
       </div>
     </section>
