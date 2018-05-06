@@ -71,7 +71,9 @@
           <li class="work__list-item"><a class="work__list-link" href="#"><img src="img/work-item5.jpg" width="370" height="420" alt="Item5"></a></li>
           <li class="work__list-item"><a class="work__list-link" href="#"><img src="img/work-item6.jpg" width="370" height="420" alt="Item6"></a></li>
         </ul>
-        <div class="work__link"><button class="btn btn--work">More</button></div>
+        <div class="work__btn-container">
+          <button class="btn btn--work">More</button>
+        </div>
       </div>
     </section>
 
@@ -189,19 +191,41 @@
 
     <section class="contacts">
       <div class="wrapper">
-        <h2 class="title contact__title">Get in Touch</h2>
+        <h2 class="title title--contacts contact__title">Get in Touch</h2>
         <div class="social contacts__social">
-          <a href="social__item social__item--twitter" href="http://twitter.com">Twitter</a>
-          <a href="social__item social__item--facebook" href="http://facebook.com">Facebook</a>
-          <a href="social__item social__item--linkedin" href="http://linkedin.com">Linkedin</a>
-          <a href="social__item social__item--vk" href="http://vk.com">Vk</a>
-          <a href="social__item social__item--behance" href="http://behance.net">Behance</a>
+          <a class="social__item" href="http://twitter.com">Twitter
+            <svg class="icon icon--twitter" width="25" height="20">
+              <use xlink:href="img/sprite.svg#social-twitter"></use>
+            </svg>
+          </a>
+          <a class="social__item" href="http://facebook.com">Facebook
+            <svg class="icon icon--facebook" width="14" height="25">
+              <use xlink:href="img/sprite.svg#social-facebook"></use>
+            </svg>
+          </a>
+          <a class="social__item" href="http://linkedin.com">Linkedin
+            <svg class="icon icon--linkedin" width="24" height="25">
+              <use xlink:href="img/sprite.svg#social-linkedin"></use>
+            </svg>
+          </a>
+          <a class="social__item" href="http://vk.com">Vk
+            <svg class="icon icon--vk" width="25" height="22">
+              <use xlink:href="img/sprite.svg#social-vk"></use>
+            </svg>
+          </a>
+          <a class="social__item" href="http://behance.net">Behance
+            <svg class="icon icon--behance" width="25" height="17">
+              <use xlink:href="img/sprite.svg#social-behance"></use>
+            </svg>
+          </a>
         </div>
-        <form class="form">
-          <input type="text" id="name" placeholder="Name">
-          <input type="email" id="email" placeholder="Email">
-          <input type="text" id="message" placeholder="Message">
-          <button class="btn btn--form">Send</button>
+        <form class="form contacts__form">
+          <input class="form__name" type="text" id="name" placeholder="Name">
+          <input class="form__email" type="email" id="email" placeholder="Email">
+          <input class="form__message" type="text" id="message" placeholder="Message">
+          <div class="form__btn-container">
+            <button class="btn btn--form">Send</button>
+          </div>
         </form>
       </div>
     </section>

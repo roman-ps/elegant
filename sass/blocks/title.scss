@@ -16,4 +16,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  &--contacts {
+    color: #ffffff;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
 }
