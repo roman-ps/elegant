@@ -17,6 +17,10 @@
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 0.025em;
+
+  &:hover {
+    color: #adadad;
+  }
 }
 
 .menu__btn {
@@ -38,5 +42,13 @@
     transform: translateY(-50%);
     left: 0;
     background-color: #ffffff;
+  }
+
+  &:hover {
+    border-color: #adadad;
+
+    &::before {
+      background-color: #adadad;
+    }
   }
 }
