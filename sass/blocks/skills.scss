@@ -1,0 +1,72 @@
+.skills {
+  padding: 100px 0 100px;
+  font-family: $lato;
+}
+
+.skills__container {
+  margin: 160px 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills__left,
+.skills__right {
+  width: 570px;
+}
+
+.skills__right {
+  padding: 0;
+  margin: 8px 0 0;
+  list-style: none;
+}
+
+.skills__left-title {
+  font-size: 27px;
+  line-height: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skills__left-description {
+  padding: 0 50px 0 0;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 100;
+}
+
+.skills__item {
+  margin: 0 0 27px;
+}
+
+.skills__item-name {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.skills__progress {
+  appearance: none;
+  width: 570px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.skills__progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.skills__progress::-webkit-progress-value {
+  background-color: #005494;
+  border-radius: 10px;
+}
+
+.skills__progress::-moz-progress-bar {
+  background-color: #005494;
+  border-radius: 10px;
+}
