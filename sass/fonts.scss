@@ -3,6 +3,7 @@
   font-weight: 100;
   font-style: normal;
   src: local("Lato Thin"),
+    url("../fonts/Lato-Thin.woff2") format("woff2"),
     url("../fonts/Lato-Thin.woff") format("woff");
   font-display: swap;
 }
@@ -12,6 +13,7 @@
   font-weight: 400;
   font-style: normal;
   src: local("Lato Regular"),
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
     url("../fonts/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
@@ -21,6 +23,7 @@
   font-weight: 500;
   font-style: normal;
   src: local("Lato Medium"),
+    url("../fonts/Lato-Medium.woff2") format("woff2"),
     url("../fonts/Lato-Medium.woff") format("woff");
   font-display: swap;
 }
@@ -30,6 +33,7 @@
   font-weight: 600;
   font-style: normal;
   src: local("Lato Semibold"),
+    url("../fonts/Lato-Semibold.woff2") format("woff2"),
     url("../fonts/Lato-Semibold.woff") format("woff");
   font-display: swap;
 }
@@ -39,6 +43,7 @@
   font-weight: 900;
   font-style: normal;
   src: local("Lato Heavy"),
+    url("../fonts/Lato-Heavy.woff2") format("woff2"),
     url("../fonts/Lato-Heavy.woff") format("woff");
   font-display: swap;
 }
@@ -48,6 +53,7 @@
   font-weight: 300;
   font-style: normal;
   src: local("Avenir Light"),
+    url("../fonts/Avenir-Light.woff2") format("woff2"),
     url("../fonts/Avenir-Light.woff") format("woff");
   font-display: swap;
 }
@@ -57,6 +63,7 @@
   font-weight: 700;
   font-style: normal;
   src: local("Raleway Bold"),
+    url("../fonts/Raleway-Bold.woff2") format("woff2"),
     url("../fonts/Raleway-Bold.woff") format("woff");
   font-display: swap;
 }
