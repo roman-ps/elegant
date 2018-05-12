@@ -45,12 +45,16 @@
   margin: 0 0 20px;
 }
 
-.work__list-item--hide {
+.work__list-item--additional {
   display: none;
 }
 
 .hide {
   display: none;
+}
+
+.open {
+  display: block;
 }
 
 .work__btn-container {
