@@ -12,7 +12,7 @@
 
 .skills__left,
 .skills__right {
-  width: 570px;
+  width: 48%;
 }
 
 .skills__right {
@@ -33,6 +33,7 @@
   font-size: 23px;
   line-height: 28px;
   font-weight: 100;
+  text-align: justify;
 }
 
 .skills__item {
@@ -50,7 +51,7 @@
 
 .skills__progress {
   appearance: none;
-  width: 570px;
+  width: 100%;
   border: 0;
   border-radius: 10px;
   background-color: #eeeeee;
