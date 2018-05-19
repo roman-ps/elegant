@@ -13,7 +13,12 @@ var workItem = document.querySelectorAll(".work__list-item");
 
 btnRight.addEventListener("click", function(event) {
   event.preventDefault();
-  sliders.style.marginLeft = "-1170px";
+  var windowWidth = document.body.clientWidth;
+  if ((windowWidth >= 960) & (windowWidth < 1200)) {
+    sliders.style.marginLeft = "-930px";
+  } else {
+    sliders.style.marginLeft = "-1170px";
+  }
   btnRight.classList.add("sliders__btn--active");
   btnLeft.classList.remove("sliders__btn--active");
 });

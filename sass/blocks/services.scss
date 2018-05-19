@@ -92,3 +92,10 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+@media #{$desktop} {
+
+  .services__item {
+    min-width: 290px;
+  }
+}
