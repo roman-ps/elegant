@@ -9,11 +9,14 @@ var workItemAdd = document.querySelectorAll(".work__list-item--additional");
 var i;
 var jsClick = document.querySelector(".js-click");
 var workItem = document.querySelectorAll(".work__list-item");
+var windowWidth = document.body.clientWidth;
 
 
 btnRight.addEventListener("click", function(event) {
   event.preventDefault();
-  sliders.style.marginLeft = "-1170px";
+  if ((windowWidth >= 960) && (windowWidth < 1200)) {
+    sliders.style.marginLeft = "-930px";
+  } else sliders.style.marginLeft = "-1170px";
   btnRight.classList.add("sliders__btn--active");
   btnLeft.classList.remove("sliders__btn--active");
 });

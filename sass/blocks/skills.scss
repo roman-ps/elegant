@@ -71,3 +71,10 @@
   background-color: #005494;
   border-radius: 10px;
 }
+
+@media #{$desktop} {
+
+  .skills__left-title {
+    font-size: 22px;
+  }
+}
