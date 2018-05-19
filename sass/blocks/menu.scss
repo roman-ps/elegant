@@ -29,26 +29,58 @@
   height: 24px;
   box-sizing: border-box;
   border: none;
-  background-color: transparent;
-  border-bottom: 4px solid #ffffff;
-  border-top: 4px solid #ffffff;
+  font-size: 0;
   cursor: pointer;
 
-  &::before {
-    @include pseudo;
-    width: 30px;
-    height: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    background-color: #ffffff;
-  }
-
-  &:hover {
-    border-color: #adadad;
+  &--open {
+    background-color: transparent;
+    border-bottom: 4px solid #ffffff;
+    border-top: 4px solid #ffffff;
 
     &::before {
-      background-color: #adadad;
+      @include pseudo;
+      width: 30px;
+      height: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: #ffffff;
+    }
+
+    &:hover {
+      border-color: #adadad;
+
+      &::before {
+        background-color: #adadad;
+      }
+    }
+  }
+
+  &--close {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      @include pseudo;
+      background-color: #ffffff;
+      width: 100%;
+      height: 4px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+
+      &::before,
+      &::after {
+        background-color: #adadad;
+      }
     }
   }
 }
