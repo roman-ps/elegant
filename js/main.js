@@ -13,19 +13,21 @@ var workItem = document.querySelectorAll(".work__list-item");
 
 btnRight.addEventListener("click", function(event) {
   event.preventDefault();
-  var windowWidth = document.body.clientWidth;
-  if ((windowWidth >= 960) & (windowWidth < 1200)) {
-    sliders.style.marginLeft = "-930px";
-  } else {
-    sliders.style.marginLeft = "-1170px";
-  }
+//  var windowWidth = document.body.clientWidth;
+//  if ((windowWidth >= 960) & (windowWidth < 1200)) {
+//    sliders.style.marginLeft = "-930px";
+//  } else {
+//    sliders.style.marginLeft = "-1170px";
+//  }
+  sliders.style.transform = "translateX(-100%)";
   btnRight.classList.add("sliders__btn--active");
   btnLeft.classList.remove("sliders__btn--active");
 });
 
 btnLeft.addEventListener("click", function(event) {
   event.preventDefault();
-  sliders.style.marginLeft = "0px";
+//  sliders.style.marginLeft = "0px";
+  sliders.style.transform = "translateX(0px)";
   btnRight.classList.remove("sliders__btn--active");
   btnLeft.classList.add("sliders__btn--active");
 });
