@@ -18,10 +18,16 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 170px 0 110px;
   margin: 85px 0 0;
   font-family: $lato;
   color: #ffffff;
+}
+
+.about__container .wrapper {
+  padding: 170px 0 110px;
+  background-image: url("../img/about-bg-phone.png");
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
 }
 
 .about__container-title {
