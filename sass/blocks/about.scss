@@ -31,7 +31,6 @@
 }
 
 .about__container-title {
-  width: 900px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
@@ -53,4 +52,11 @@
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+}
+
+@media #{$tablet} {
+
+  .about__description {
+    width: 100%;
+  }
 }
