@@ -84,3 +84,28 @@
     font-size: 18px;
   }
 }
+
+@media #{$mobile} {
+
+  .header {
+    padding: 50px 0 90px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__title {
+    margin: 100px 0 0;
+    font-size: 30px;
+  }
+
+  .header__subtitle {
+    margin: 50px 0 0;
+    font-size: 16px;
+  }
+
+  .header__btn-container {
+    display: none;
+  }
+}

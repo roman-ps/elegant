@@ -101,3 +101,10 @@
     display: block;
   }
 }
+
+@media #{$mobile} {
+
+  .menu__btn--open {
+    display: block;
+  }
+}
