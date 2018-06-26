@@ -99,3 +99,23 @@
     min-width: 290px;
   }
 }
+
+@media #{$tablet} {
+
+  .services__item {
+    min-width: 290px;
+  }
+
+  .services__item:nth-child(4n) {
+    margin: 0 0 0 30px;
+  }
+
+  .services__container-numbers {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .services__container-text {
+    font-size: 18px;
+  }
+}
