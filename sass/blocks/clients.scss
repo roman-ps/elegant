@@ -44,3 +44,20 @@
   text-align: right;
   text-transform: uppercase;
 }
+
+@media #{$tablet} {
+
+  .clients__container {
+    padding: 50px 0 30px;
+  }
+
+  .clients__quote {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .clients__citing {
+    font-size: 18px;
+    margin: 0;
+  }
+}
