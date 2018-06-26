@@ -47,7 +47,16 @@
 
 @media #{$tablet} {
 
+  .clients__list {
+    justify-content: space-around;
+  }
+
+  .clients__item {
+    margin: 0 20px 20px;
+  }
+
   .clients__container {
+    margin: 50px 0 0;
     padding: 50px 0 30px;
   }
 
