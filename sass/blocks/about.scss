@@ -73,3 +73,28 @@
     margin: 0 0 15px;
   }
 }
+
+@media #{$mobile} {
+
+  .about__description {
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .about__container .wrapper {
+    padding: 40px 0 430px;
+    background-position: 50% 100%;
+    text-align: center;
+  }
+
+  .about__container-description {
+    width: 100%;
+    margin: 0 0 25px;
+    font-size: 20px;
+  }
+
+  .about__container-title {
+    font-size: 24px;
+  }
+}
