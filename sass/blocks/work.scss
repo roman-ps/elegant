@@ -53,3 +53,19 @@
   margin: 80px auto 0;
   text-align: center;
 }
+
+@media #{$mobile} {
+
+  .work__nav {
+    margin: 0;
+  }
+
+  .work__list {
+    margin: 30px 0 0;
+  }
+
+  .work__nav-item {
+    padding: 0;
+    width: 100%;
+  }
+}
