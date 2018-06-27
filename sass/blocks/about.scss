@@ -76,6 +76,10 @@
 
 @media #{$mobile} {
 
+  .about {
+    padding: 50px 0 0;
+  }
+
   .about__description {
     width: 100%;
     font-size: 16px;

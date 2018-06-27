@@ -122,6 +122,10 @@
 
 @media #{$mobile} {
 
+  .services {
+    padding: 50px 0 0;
+  }
+
   .services__list {
     margin: 50px 0 0;
     display: block;

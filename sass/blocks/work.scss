@@ -56,6 +56,10 @@
 
 @media #{$mobile} {
 
+  .work {
+    padding: 50px 0;
+  }
+
   .work__nav {
     margin: 0;
   }
@@ -67,5 +71,9 @@
   .work__nav-item {
     padding: 0;
     width: 100%;
+  }
+
+  .work__btn-container {
+    margin: 30px 0 0;
   }
 }
