@@ -20,3 +20,13 @@
     color: #ffffff;
   }
 }
+
+@media #{$mobile} {
+
+  .btn {
+
+    &--work {
+      width: 177px;
+    }
+  }
+}
