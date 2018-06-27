@@ -15,3 +15,14 @@
 .contacts__form {
   margin: 70px 0 0;
 }
+
+@media #{$mobile} {
+
+  .contacts {
+    padding: 50px 0 50px;
+  }
+
+  .contacts__social {
+    margin: 50px 0 0;
+  }
+}
