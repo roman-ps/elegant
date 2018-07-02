@@ -90,11 +90,12 @@
 @media #{$tablet} {
 
   .menu__item {
-    padding: 0 10px 0 0;
+    display: block;
+    padding: 5px 10px;
   }
 
   .menu__link {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .menu__btn--open {
@@ -103,6 +104,11 @@
 }
 
 @media #{$mobile} {
+
+  .menu__item {
+    display: block;
+    padding: 5px 10px;
+  }
 
   .menu__btn--open {
     display: block;
