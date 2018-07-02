@@ -87,6 +87,14 @@
   }
 }
 
+@media #{$desktop} {
+
+  .menu__btn .open,
+  .menu__btn .close {
+    display: none;
+  }
+}
+
 @media #{$tablet} {
 
   .menu__item {
