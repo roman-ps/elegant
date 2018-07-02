@@ -89,8 +89,7 @@
 
 @media #{$desktop} {
 
-  .menu__btn .open,
-  .menu__btn .close {
+  .menu__btn {
     display: none;
   }
 }
@@ -109,6 +108,14 @@
   .menu__btn--open {
     display: block;
   }
+
+  .menu__btn-show {
+    display: block;
+  }
+
+  .menu__btn-hide {
+    display: none;
+  }
 }
 
 @media #{$mobile} {
@@ -120,5 +127,13 @@
 
   .menu__btn--open {
     display: block;
+  }
+
+  .menu__btn-show {
+    display: block;
+  }
+
+  .menu__btn-hide {
+    display: none;
   }
 }

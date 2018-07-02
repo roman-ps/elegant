@@ -59,14 +59,14 @@ jsClick.addEventListener("click", function(event) {
 
 menuOpen.addEventListener("click", function(event) {
   event.preventDefault();
-  menuOpen.classList.add("hide");
-  menuClose.classList.add("open");
+  menuOpen.classList.add("menu__btn-hide");
+  menuClose.classList.add("menu__btn-show");
   menu.classList.add("open");
 });
 
 menuClose.addEventListener("click", function(event) {
   event.preventDefault();
-  menuClose.classList.remove("open");
-  menuOpen.classList.remove("hide");
+  menuClose.classList.remove("menu__btn-show");
+  menuOpen.classList.remove("menu__btn-hide");
   menu.classList.remove("open");
 });
