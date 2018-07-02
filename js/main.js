@@ -9,6 +9,9 @@ var workItemAdd = document.querySelectorAll(".work__list-item--additional");
 var i;
 var jsClick = document.querySelector(".js-click");
 var workItem = document.querySelectorAll(".work__list-item");
+var menuOpen = document.querySelector(".menu__btn--open");
+var menuClose = document.querySelector(".menu__btn--close");
+var menu = document.querySelector(".header__nav");
 
 
 btnRight.addEventListener("click", function(event) {
@@ -48,9 +51,22 @@ jsClick.addEventListener("click", function(event) {
   var new1 = jsClick.dataset.name;
   for (i = 0; i < workItem.length; i++) {
     if (new1 == workItem[i].getAttribute("data-name")) {
-      console.log(workItem[i]);
       workItem[i].style.display = "block";
     } else
       workItem[i].style.display = "none";
   }
+});
+
+menuOpen.addEventListener("click", function(event) {
+  event.preventDefault();
+  menuOpen.classList.add("hide");
+  menuClose.classList.add("open");
+  menu.classList.add("open");
+});
+
+menuClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  menuClose.classList.remove("open");
+  menuOpen.classList.remove("hide");
+  menu.classList.remove("open");
 });
