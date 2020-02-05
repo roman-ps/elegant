@@ -34,7 +34,6 @@
 
 .work__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
   margin: 85px 0 0;
@@ -42,7 +41,7 @@
 }
 
 .work__list-item {
-  margin: 0 0 20px;
+  margin: 0 20px 20px 0;
 }
 
 .work__list-item--additional {
