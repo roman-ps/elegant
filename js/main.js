@@ -39,6 +39,14 @@ Node.MENU_OPEN.addEventListener("click", openMenu);
 Node.MENU_CLOSE.addEventListener("click", closeMenu);
 Node.NAV.addEventListener("click", handlerNavigation);
 
+function test(Nodes, flag) {
+  if (flag) {
+    for (let i = 0; i < Nodes.ITEM_ADD.length; i++) {
+      Nodes.ITEM_ADD[i].style.display = "none";
+    }
+  }
+}
+
 function sliderMoveRight(evt) {
   evt.preventDefault();
   Node.SLIDERS.style.transform = "translateX(-100%)";
@@ -57,7 +65,7 @@ function openAdditionalItems(evt) {
   evt.preventDefault();
   Node.BTN_MORE.classList.add("hide");
   for (let i = 0; i < Nodes.ITEM_ADD.length; i++) {
-    Nodes.ITEM_ADD[i].classList.add("open");
+    Nodes.ITEM_ADD[i].style.display = "block";
   }
   Node.BTN_CLOSE.classList.remove("hide");
 };
@@ -66,7 +74,7 @@ function closeAdditionalItems(evt) {
   evt.preventDefault();
   Node.BTN_CLOSE.classList.add("hide");
   for (let i = 0; i < Nodes.ITEM_ADD.length; i++) {
-    Nodes.ITEM_ADD[i].classList.remove("open");
+    Nodes.ITEM_ADD[i].style.display = "none";
   }
   Node.BTN_MORE.classList.remove("hide");
 };
@@ -87,7 +95,7 @@ function handlerNavigation(evt){
   if (temp == 'all') {
     for (let i = 0; i < Nodes.ITEM.length; i++) {
       Nodes.ITEM[i].style.display = "block";
-      Nodes.ITEM_ADD[i].style.display = "none";
+      test(Nodes, true);
     }
   }
 };
