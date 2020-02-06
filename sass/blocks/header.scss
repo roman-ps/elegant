@@ -19,6 +19,10 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  cursor: pointer;
+}
+
 .header__title {
   margin: 240px 0 0;
   font-family: $raleway;
@@ -67,6 +71,11 @@
     transform: translate(-50%, -50%) rotate(45deg);
     border-top: none;
     border-left: none;
+  }
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+
   }
 }
 

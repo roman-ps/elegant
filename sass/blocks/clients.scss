@@ -45,6 +45,18 @@
   text-transform: uppercase;
 }
 
+.clients__item {
+  transition: 1.5s;
+  padding: 5px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #898989;
+    border-radius: 10px;
+    transform: scale(1.2);
+  }
+}
+
 @media #{$tablet} {
 
   .clients__list {
