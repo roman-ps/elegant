@@ -21,14 +21,18 @@ const Selectors = {
 function toNodes(Selectors, flag){
   let key = Object.keys(Selectors);
   let Temp = {}
-  for (let i = 0; i < key.length; i++){
-    Temp[key[i]] = document[!flag ? 'querySelector' : 'querySelectorAll'](Selectors[key[i]]);
-  }
+  key.forEach(function(elem) {
+    Temp[key] = document[!flag ? 'querySelector' : 'querySelectorAll'](Selectors[key])
+  })
   return Temp;
 }
+  /*for (let i = 0; i < key.length; i++){
+    Temp[key[i]] = document[!flag ? 'querySelector' : 'querySelectorAll'](Selectors[key[i]]);
+  }*/
 
 const Node = toNodes(Selector, );
 const Nodes = toNodes(Selectors, true);
+//console.log(Nodes);
 
 document.addEventListener("DOMContentLoaded", toNodes);
 Node.BTN_LEFT.addEventListener("click", sliderMoveLeft);
