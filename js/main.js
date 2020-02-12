@@ -44,43 +44,29 @@ Node.MENU_OPEN.addEventListener("click", openMenu);
 Node.MENU_CLOSE.addEventListener("click", closeMenu);
 Node.NAV.addEventListener("click", handlerNavigation);
 
-function hideAddItems(Nodes) {
+/*function hideAddItems(Nodes) {
   for (let i = 0; i < Nodes.ITEM_ADD.length; i++) {
     Nodes.ITEM_ADD[i].style.display = "none";
   }
-};
+};*/
 
-function stateAddItems(action, item) {
+function displayAddItems(action, item) {
   for (let i = 0; i < item.length; i++) {
     item[i].style.display = action;
   }
 }
 
-function sliderMoveRight(evt) {
-  evt.preventDefault();
-  Node.SLIDERS.style.transform = "translateX(-100%)";
-  Node.BTN_RIGHT.classList.add("sliders__btn--active");
-  Node.BTN_LEFT.classList.remove("sliders__btn--active");
-};
-
-function sliderMoveLeft(evt) {
-  evt.preventDefault();
-  Node.SLIDERS.style.transform = "translateX(0px)";
-  Node.BTN_RIGHT.classList.remove("sliders__btn--active");
-  Node.BTN_LEFT.classList.add("sliders__btn--active");
-};
-
 function openAddItems(evt) {
   evt.preventDefault();
   Node.BTN_MORE.classList.toggle("hide");
-  stateAddItems("block", Nodes.ITEM_ADD);
+  displayAddItems("block", Nodes.ITEM_ADD);
   Node.BTN_CLOSE.classList.toggle("hide");
 };
 
 function closeAddItems(evt) {
   evt.preventDefault();
   Node.BTN_CLOSE.classList.toggle("hide");
-  stateAddItems("none", Nodes.ITEM_ADD);
+  displayAddItems("none", Nodes.ITEM_ADD);
   Node.BTN_MORE.classList.toggle("hide");
 };
 
@@ -98,12 +84,27 @@ function handlerNavigation(evt){
     }
   }
   if (temp == 'all') {
-    stateAddItems("block", Nodes.ITEM);
-    hideAddItems(Nodes, true);
+    displayAddItems("block", Nodes.ITEM);
+    //hideAddItems(Nodes);
+    displayAddItems("none", Nodes.ITEM_ADD);
     /*for (let i = 0; i < Nodes.ITEM.length; i++) {
       Nodes.ITEM[i].style.display = "block";
     }*/
   }
+};
+
+function sliderMoveRight(evt) {
+  evt.preventDefault();
+  Node.SLIDERS.style.transform = "translateX(-100%)";
+  Node.BTN_RIGHT.classList.add("sliders__btn--active");
+  Node.BTN_LEFT.classList.remove("sliders__btn--active");
+};
+
+function sliderMoveLeft(evt) {
+  evt.preventDefault();
+  Node.SLIDERS.style.transform = "translateX(0px)";
+  Node.BTN_RIGHT.classList.remove("sliders__btn--active");
+  Node.BTN_LEFT.classList.add("sliders__btn--active");
 };
 
 function openMenu(evt) {
