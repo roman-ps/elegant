@@ -35,6 +35,8 @@ function toNodes(Selectors, flag){
 
 const Node = toNodes(Selector, );
 const Nodes = toNodes(Selectors, true);
+const item = Nodes.ITEM;
+const itemAdd = Nodes.ITEM_ADD;
 
 Node.BTN_LEFT.addEventListener("click", sliderMoveLeft);
 Node.BTN_RIGHT.addEventListener("click", sliderMoveRight);
@@ -59,14 +61,14 @@ function displayAddItems(action, item) {
 function openAddItems(evt) {
   evt.preventDefault();
   Node.BTN_MORE.classList.toggle("hide");
-  displayAddItems("block", Nodes.ITEM_ADD);
+  displayAddItems("block", itemAdd);
   Node.BTN_CLOSE.classList.toggle("hide");
 };
 
 function closeAddItems(evt) {
   evt.preventDefault();
   Node.BTN_CLOSE.classList.toggle("hide");
-  displayAddItems("none", Nodes.ITEM_ADD);
+  displayAddItems("none", itemAdd);
   Node.BTN_MORE.classList.toggle("hide");
 };
 
@@ -76,17 +78,18 @@ function handlerNavigation(evt){
   let parent = evt.currentTarget;
   let temp = evt.target.dataset.name;
   if (child != parent && temp != '') {
-    for (let i = 0; i < Nodes.ITEM.length; i++) {
-      if (temp === Nodes.ITEM[i].dataset.name) {
+    for (let i = 0; i < item.length; i++) {
+      item[i].style.display = temp === item[i].dataset.name ? "block" : "none";
+      /*if (temp === Nodes.ITEM[i].dataset.name) {
         Nodes.ITEM[i].style.display = "block";
       }
-      else Nodes.ITEM[i].style.display = "none";
+      else Nodes.ITEM[i].style.display = "none";*/
     }
   }
   if (temp == 'all') {
-    displayAddItems("block", Nodes.ITEM);
+    displayAddItems("block", item);
+    displayAddItems("none", itemAdd);
     //hideAddItems(Nodes);
-    displayAddItems("none", Nodes.ITEM_ADD);
     /*for (let i = 0; i < Nodes.ITEM.length; i++) {
       Nodes.ITEM[i].style.display = "block";
     }*/
