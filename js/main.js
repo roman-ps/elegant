@@ -31,13 +31,15 @@ function toNodes(Selectors, flag){
 const Node = toNodes(Selector, );
 const Nodes = toNodes(Selectors, true);
 
-Node.BTN_LEFT.addEventListener("click", sliderMoveLeft);
-Node.BTN_RIGHT.addEventListener("click", sliderMoveRight);
-Node.BTN_MORE.addEventListener("click", openAddItems);
-Node.BTN_CLOSE.addEventListener("click", closeAddItems);
-Node.MENU_OPEN.addEventListener("click", openMenu);
-Node.MENU_CLOSE.addEventListener("click", closeMenu);
-Node.NAV.addEventListener("click", handlerNavigation);
+function events() {
+  Node.BTN_LEFT.addEventListener("click", sliderMoveLeft);
+  Node.BTN_RIGHT.addEventListener("click", sliderMoveRight);
+  Node.BTN_MORE.addEventListener("click", openAddItems);
+  Node.BTN_CLOSE.addEventListener("click", closeAddItems);
+  Node.MENU_OPEN.addEventListener("click", openMenu);
+  Node.MENU_CLOSE.addEventListener("click", closeMenu);
+  Node.NAV.addEventListener("click", handlerNavigation);
+}
 
 function displayAddItems(action, items) {
   for (let i = 0; i < items.length; i++) {
@@ -102,3 +104,5 @@ function closeMenu(evt) {
   Node.MENU_OPEN.classList.remove("menu__btn-hide");
   Node.MENU.classList.remove("open");
 };
+
+events();
