@@ -18,25 +18,18 @@ const Selectors = {
   JSCLICK: '.js-click',
 };
 
-const queryTypes = {
-  ONE: 'querySelector',
-  ALL: 'querySelectorAll'
-};
-
 function toNodes(Selectors, flag){
   let queryType = flag ? 'querySelectorAll' : 'querySelector';
   let key = Object.keys(Selectors);
   let Temp = {};
-  key.forEach(function(elem) {
-    Temp[key] = document[queryType](Selectors[key]);
+  key.forEach(function(elem, index) {
+      Temp[key[index]] = document[queryType](Selectors[key[index]]);
   })
   return Temp;
 };
 
 const Node = toNodes(Selector, );
 const Nodes = toNodes(Selectors, true);
-const item = Nodes.ITEM;
-const itemAdd = Nodes.ITEM_ADD;
 
 Node.BTN_LEFT.addEventListener("click", sliderMoveLeft);
 Node.BTN_RIGHT.addEventListener("click", sliderMoveRight);
@@ -46,29 +39,23 @@ Node.MENU_OPEN.addEventListener("click", openMenu);
 Node.MENU_CLOSE.addEventListener("click", closeMenu);
 Node.NAV.addEventListener("click", handlerNavigation);
 
-/*function hideAddItems(Nodes) {
-  for (let i = 0; i < Nodes.ITEM_ADD.length; i++) {
-    Nodes.ITEM_ADD[i].style.display = "none";
-  }
-};*/
-
-function displayAddItems(action, item) {
-  for (let i = 0; i < item.length; i++) {
-    item[i].style.display = action;
+function displayAddItems(action, items) {
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.display = action;
   }
 }
 
 function openAddItems(evt) {
   evt.preventDefault();
   Node.BTN_MORE.classList.toggle("hide");
-  displayAddItems("block", itemAdd);
+  displayAddItems("block", Nodes.ITEM_ADD);
   Node.BTN_CLOSE.classList.toggle("hide");
 };
 
 function closeAddItems(evt) {
   evt.preventDefault();
   Node.BTN_CLOSE.classList.toggle("hide");
-  displayAddItems("none", itemAdd);
+  displayAddItems("none", Nodes.ITEM_ADD);
   Node.BTN_MORE.classList.toggle("hide");
 };
 
@@ -78,21 +65,13 @@ function handlerNavigation(evt){
   let parent = evt.currentTarget;
   let temp = evt.target.dataset.name;
   if (child != parent && temp != '') {
-    for (let i = 0; i < item.length; i++) {
-      item[i].style.display = temp === item[i].dataset.name ? "block" : "none";
-      /*if (temp === Nodes.ITEM[i].dataset.name) {
-        Nodes.ITEM[i].style.display = "block";
-      }
-      else Nodes.ITEM[i].style.display = "none";*/
+    for (let i = 0; i < Nodes.ITEM.length; i++) {
+      Nodes.ITEM[i].style.display = temp === Nodes.ITEM[i].dataset.name ? "block" : "none";
     }
   }
   if (temp == 'all') {
-    displayAddItems("block", item);
-    displayAddItems("none", itemAdd);
-    //hideAddItems(Nodes);
-    /*for (let i = 0; i < Nodes.ITEM.length; i++) {
-      Nodes.ITEM[i].style.display = "block";
-    }*/
+    displayAddItems("block", Nodes.ITEM);
+    displayAddItems("none", Nodes.ITEM_ADD);
   }
 };
 
